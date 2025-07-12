@@ -1,0 +1,6 @@
+{
+  "name": "AI LaTeX Report Maker",
+  "description": "Generate professional reports in LaTeX format by simply describing your topic. Provide optional author details and let the AI create a complete .tex file ready for compilation.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
