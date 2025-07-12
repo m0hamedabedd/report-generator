@@ -6,6 +6,7 @@ import ReportView from './components/ReportView';
 import HowItWorks from './components/HowItWorks';
 import { SparklesIcon } from './components/icons';
 import { useLanguage } from './contexts/LanguageContext';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
@@ -30,6 +31,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans flex flex-col items-center p-4 sm:p-6 lg:p-8">
+      <Analytics />
       <main className="w-full flex-grow flex flex-col items-center">
         {userDetails ? (
           <>
